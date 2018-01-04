@@ -19,7 +19,7 @@ base64 암호화 방식은 그 끝이 =으로 끝나서 알아보기 쉽다.
 HINT : 복호화  
 
 ### Solution
-![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Web/Mixed_breed/Image/Firstpage.png)  
+![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Web/Mixed_breed/Image/Firstpage.PNG)  
 처음에 들어가면 패스워드와 패스코드를 입력하는 폼이 기다리고 있었다.
 
 그리고 소스코드를 보면 다음과 같은 코드가 나와있다.
@@ -121,8 +121,8 @@ passcode 가 4보다는 크고 5보다는 작을 경우 hint를 출력해준다.
 
 결과는 다음과 같다.
 
-![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Web/Mixed_breed/Image/FirstStageInput.png)  
-![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Web/Mixed_breed/Image/FirstStageClear.png)
+![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Web/Mixed_breed/Image/FirstStageInput.PNG)  
+![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Web/Mixed_breed/Image/FirstStageClear.PNG)
 
 성공!! Hint 값이 출력되었다.
 
@@ -130,12 +130,12 @@ passcode 가 4보다는 크고 5보다는 작을 경우 hint를 출력해준다.
 
 자 그러면 이것도 다시 디코딩 해주자.
 
-![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Web/Mixed_breed/Image/SecondStageClear.png)
+![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Web/Mixed_breed/Image/SecondStageClear.PNG)
 
 결과 적으로 **7e432d6f6cc2100e03523d8985c914f3ca3f522af7799564d48c37af231c9d5b9acbc45201e139cdab4a01c7aadb4f8e4f9a2990eb3ef699f6495055cedea0d4** 가 ./hint.php?readme 를 의미함을 알 수 있었다.  
 그러면 문제의 의도대로 들어가주자.  
 
-![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Web/Mixed_breed/Image/LastClear!!.png)
+![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Web/Mixed_breed/Image/LastClear!!.PNG)
 
 우리를 기다리고 있는 Flag 가 있었다. **클리어!!** (혼종..)
 
