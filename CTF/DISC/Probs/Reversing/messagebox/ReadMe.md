@@ -12,26 +12,26 @@ Download!
 ## Solution
 (나는 Ollydbg 말고 x64dbg 라는 프로그램을 사용하였다., 설마 이게 문제가 될까)  
 
-![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Network/Reversing/Image/StartMain.PNG)  
+![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Reversing/messagebox/Image/StartMain.PNG)  
 
 들어가서 메시지 박스가 뜨기전에 breakpoint를 걸어놓고 계속 진행시켰다.  
 
 일단 "this wrong이라는 메시지 후 종료" 라는 이벤트(?)를 막기 위해 ZF 플래그 값을 수정하여  
 해당 메시지가 뜨지 않게 하였다.  
 
-![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Network/Reversing/Image/JumpSuccess.PNG)  
+![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Reversing/messagebox/Image/JumpSuccess.PNG)  
 
 잘 넘어가는데 성공했다!!  
 메시지박스에서 말하기를 "I'm Ayoung" 을 "I'm Han" 으로 바꾸라고 한다.  
 그냥 메모리에 해당 문자열 값을 넣어줄때 그 주소를 살짝 바꿔주었다.  
 
-![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Network/Reversing/Image/EditASM.PNG)  
+![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Reversing/messagebox/Image/EditASM.PNG)  
 
 그랬더니 잘 통과해서 콘솔에 문자열을 출력하기 시작했다!  
 
-![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Network/Reversing/Image/ShowFLAG1.PNG)  
-![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Network/Reversing/Image/ShowFLAG2.PNG)   
-![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Network/Reversing/Image/ShowFLAG3.PNG)  
+![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Reversing/messagebox/Image/ShowFLAG1.PNG)  
+![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Reversing/messagebox/Image/ShowFLAG2.PNG)   
+![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Reversing/messagebox/Image/ShowFLAG3.PNG)  
 
 그리고서는 프로그램이 종료 되었다.
 콘솔에 떴던 메시지는 다음과 같다.
