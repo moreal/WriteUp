@@ -8,7 +8,7 @@
 암호화를 통한 결과가 0e로 시작되는 경우가 있다고 한다. 그 경우를 찾아 보자!!!  
 
 ## Solution
-![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Web/MagicTIme/Image/EmptyPage.PNG)
+![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Web/MagicTime/Image/EmptyPage.PNG)
 
 텅텅빈 페이지가 우리를 기다리고 있다.  
 
@@ -70,8 +70,8 @@ aabg7XSs 를 md5encryption.com에서 돌려보니 0e0873864821360137409577809652
 구글에 검색해보면 그런 값이 몇 나온다.  
 나는 그 중 240610708를 입력했다.
 
-![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Web/MagicTIme/Image/InputMagicHash.PNG)  
-![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Web/MagicTIme/Image/Clear.PNG)
+![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Web/MagicTime/Image/InputMagicHash.PNG)  
+![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Web/MagicTime/Image/Clear.PNG)
 
 **클리어!!**
 
