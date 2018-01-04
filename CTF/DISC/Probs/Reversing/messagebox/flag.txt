@@ -1,0 +1,65 @@
+0x27, 0x4d, 0x57, 0x47, 0x7f, 0x35, 0x24, 0x6c, 0x44, 0x72, 0x61, 0x24, 0x65, 0x24, 0x67, 0x6c, 0x34, 0x67, 0x6b, 0x68, 0x44, 0x70, 0x37, 0x79
+you can use number '4' to decode flag
+
+=> 'MWG5$lDra$e$gl4gkhDp7y
+
+xor!!
+
+Python 2.7.14 (v2.7.14:84471935ed, Sep 16 2017, 20:25:58) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> len("0x27, 0x4d, 0x57, 0x47, 0x7f, 0x35, 0x24, 0x6c, 0x44, 0x72, 0x61, 0x24, 0x65, 0x24, 0x67, 0x6c, 0x34, 0x67, 0x6b, 0x68, 0x44, 0x70, 0x37, 0x79".split(","))
+24
+>>> for i in range(24):
+...     r = int(input(),16)
+...     r ^= 4
+...     print chr(r),
+...
+27 4d 57 47 7f 35 24 6c 44 72 61 24 65 24 67 6c 34 67 6b 68 44 70 37 79
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+  File "<string>", line 1
+    27 4d 57 47 7f 35 24 6c 44 72 61 24 65 24 67 6c 34 67 6b 68 44 70 37 79
+       ^
+SyntaxError: invalid syntax
+>>> line = raw_input()
+27 4d 57 47 7f 35 24 6c 44 72 61 24 65 24 67 6c 34 67 6b 68 44 70 37 79
+>>> d = line.split(" ")
+>>> d
+['27', '4d', '57', '47', '7f', '35', '24', '6c', '44', '72', '61', '24', '65', '24', '67', '6c', '34', '67', '6b', '68', '44', '70', '37', '79']
+>>> [for int(i,16) in d]
+  File "<stdin>", line 1
+    [for int(i,16) in d]
+       ^
+SyntaxError: invalid syntax
+>>> [int(i,16) for i in d]
+[39, 77, 87, 71, 127, 53, 36, 108, 68, 114, 97, 36, 101, 36, 103, 108, 52, 103, 107, 104, 68, 112, 55, 121]
+>>> d = [int(i,16) for i in d]
+>>> for i in d:
+...
+  File "<stdin>", line 2
+
+    ^
+IndentationError: expected an indented block
+>>> [r^4 for i in range(1,4)]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'r' is not defined
+>>> [i^4 for i in range(1,4)]
+[5, 6, 7]
+>>> [i^4 for i in d]
+[35, 73, 83, 67, 123, 49, 32, 104, 64, 118, 101, 32, 97, 32, 99, 104, 48, 99, 111, 108, 64, 116, 51, 125]
+>>> s = [i^4 for i in d]
+>>> c = [chr(c) for c in s]
+>>> c
+['#', 'I', 'S', 'C', '{', '1', ' ', 'h', '@', 'v', 'e', ' ', 'a', ' ', 'c', 'h', '0', 'c', 'o', 'l', '@', 't', '3', '}']
+>>> for t in c:
+...     print t,
+...
+# I S C { 1   h @ v e   a   c h 0 c o l @ t 3 }
+>>> string = ""
+>>> for t in c:
+...     string+=t
+...
+>>> string
+'#ISC{1 h@ve a ch0col@t3}'
+>>>
