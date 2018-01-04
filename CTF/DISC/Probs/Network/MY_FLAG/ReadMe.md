@@ -32,7 +32,8 @@ Download!
 
 ![Image](https://github.com/moreal/WriteUp/blob/master/CTF/DISC/Probs/Network/MY_FLAG/Octopus.png)  
 
-// 문제에서 말했듯이 파일 헤더에 문제가 있었는데 Zip 파일의 Extra field Length 값이 손상되었던 듯 한데 알집에서 복구기능으로 복구해 줬다.  
+// 문제에서 말했듯이 파일 헤더에 문제가 있었는데 Zip 파일의 Extra field Length 값이 손상되었던 듯 한데 알집에서 복구기능으로 복구해 줬다. 아 PNG 시그니처 아는게 의도 였을까..?  
+// 아 그리고 뒤의 3개를 못 봐서 한 2시간 정도 버렸었던 것 같다, 늘 끝까지 유심히 보자.  
 
 ## Flag
 DISC{Oct@ps4}
