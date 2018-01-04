@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://dsmctf.kr/probs.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DSM CTF</title>
+    <!--<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Shadows+Into+Light" rel="stylesheet">-->
+    <link rel="stylesheet" type="text/css" href="./Probs_files/style.css">
+    <script src="./Probs_files/script.js.다운로드"></script>
+</head>
+<body>
+    <nav class="sidenav">
+        <ul class="sidenavList">
+            <button class="sidenavCloseBtn pointer">×</button>
+            <li class="sidenavLink sidenavTitle"><a href="http://dsmctf.kr/">DSM CTF</a></li>
+            <li><a class="sidenavLink sidenavLinkHover" href="http://dsmctf.kr/probs.html">Probs</a></li>
+            <li><a class="sidenavLink sidenavLinkHover" href="http://dsmctf.kr/rank.html">Rank</a></li>
+            <li><a class="sidenavLink sidenavLinkHover" href="http://dsmctf.kr/auth.html">Auth</a></li>
+            <li><a class="sidenavLink sidenavLinkHover" href="http://dsmctf.kr/contact.html">Contact</a></li>
+            <br>
+            
+            <li><a class="sidenavLink sidenavLinkHover" href="http://dsmctf.kr/logout">logout</a></li>
+            <li><a class="sidenavLink sidenavLinkHover" href="http://dsmctf.kr/mypage">mypage</a></li>
+            <li><a class="sidenavLink sidenavLinkHover" href="http://dsmctf.kr/probs.html#">ABCDEFGH</a></li>
+            
+        </ul>
+    </nav>
+    <div class="probsModalPlace">
+        
+        <div id="probsOverlayCeasarSalad" class="overlay probsOverlay">
+            <div class="modal">
+                <button class="modalCloseBtn pointer" onclick="clclose(&#39;CeasarSalad&#39;);">×</button>
+                <div class="probScore">200</div>
+                <h3 class="modalTitle">CeasarSalad</h3>
+                <div class="modalBody">
+                    <p class="probContent">카이사르 암호(Caesar cipher) 또는 시저 암호는 암호학에서 다루는 간단한 치환암호의 일종이다. 암호화하고자 하는 내용을 알파벳별로 일정한 거리만큼 밀어서 다른 알파벳으로 치환하는 방식이다.
+<br>예를 들어 3글자씩 밀어내는 카이사르 암호로 'COME TO ROME'을 암호화하면 'FRPH WR URPH'가 된다.
+<br>Ceasar 암호로 암호화된 문장을 복호화해 Flag를 찾자!
+<br>
+<br>
+<br><a href="http://dsmctf.kr/probs/586d7fa31a4442c9bebdd938f7578b69/encrypted.txt">Download!</a></p>
+                    
+                    <span class="smlFont">earliest solve</span>
+                    
+                    <p class="earliestSolve">1. Xsolute Lim</p>
+                    
+                    <p class="earliestSolve">2. WangBamBbang</p>
+                    
+                    <p class="earliestSolve">3. RISM</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="probsOverlay연결고리" class="overlay probsOverlay">
+            <div class="modal">
+                <button class="modalCloseBtn pointer" onclick="clclose(&#39;연결고리&#39;);">×</button>
+                <div class="probScore">840</div>
+                <h3 class="modalTitle">연결고리</h3>
+                <div class="modalBody">
+                    <p class="probContent">암호학에 관심을 가지도록 점수 퍼주는 문제를 냈습니다. 이정도면 할 수 있겠죠??
+<br>
+<br>DES-CBC로 암호화된 평문입니다. 암호화 함수를 E(), 평문을 P, 초기화벡터를 IV라고 할때 이 암호문을  'E(P) || IV' 라고 할 수 있겠네요.
+<br>암호화할때 키는 대문자 알파벳으로 만든 4자리 문자열을 사용했습니다. 이정도면 문제 줬죠??
+<br>
+<br>
+<br>0E39D3E6F7C3600009498CB48ED22BDECF27939BE9C0469E0AA04C91F363F91339CBC780811350D5</p>
+                    
+                    <span class="smlFont">earliest solve</span>
+                    
+                    <p class="earliestSolve">1. WangBamBbang</p>
+                    
+                    <p class="earliestSolve">2. papico</p>
+                    
+                    <p class="earliestSolve">3. qqq1ppp</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="probsOverlay암호와함께사라지다" class="overlay probsOverlay">
+            <div class="modal">
+                <button class="modalCloseBtn pointer" onclick="clclose(&#39;암호와함께사라지다&#39;);">×</button>
+                <div class="probScore">680</div>
+                <h3 class="modalTitle">암호와함께사라지다</h3>
+                <div class="modalBody">
+                    <p class="probContent">대회를 앞두고 성훈이가 사라졌다. 책상에는 RSA 공개키 알고리즘 내용이 나온 실용암호학 책이 펼쳐져 있다. 책상엔 희미하게 연필로 적은 이상한 수가 나열되어 있다. 읽을수는 없어보이는데.. 여기에 무슨 뜻이 있는걸까?
+<br>
+<br>
+<br>(성훈이의 공개키 : (107, 493))
+<br>
+<br>
+<br>408, 108, 111, 254, 81, 408, 143, 75, 349, 122, 238, 223, 217, 147, 58, 367, 143, 223, 235, 94, 463, 235, 331, 147, 11, 468, 102, 219, 11, 210, 237, 80
+<br>
+<br>HINT : 책상에 적힌 숫자는 성훈이가 개인키로 암호화 시키고 얻은 암호문입니다.</p>
+                    
+                    <span class="smlFont">earliest solve</span>
+                    
+                    <p class="earliestSolve">1. jiw01</p>
+                    
+                    <p class="earliestSolve">2. bori</p>
+                    
+                    <p class="earliestSolve">3. Xsolute Lim</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="probsOverlayGold_Dog" class="overlay probsOverlay">
+            <div class="modal">
+                <button class="modalCloseBtn pointer" onclick="clclose(&#39;Gold_Dog&#39;);">×</button>
+                <div class="probScore">360</div>
+                <h3 class="modalTitle">Gold_Dog</h3>
+                <div class="modalBody">
+                    <p class="probContent">2018년의 띠는 황금개띠다.
+<br>이를 기념하여 동아리 Lapio의 부장 K 군은 동아리원 S 양에게 황금개 그림을 그려달라고 외주를 맡겼다.
+<br>3일간 공을 들여 그리기 작업을 마친 S 양은 K 군에게 그림을 제출하려고 하였으나 의문의 괴한 J 군에게 암살당하였고,
+<br>괴한 J 군은 자신의 흔적을 남기는 사이코패스여서, 해당 그림에 자신의 메시지를 남겨두었다.
+<br>수사관인 당신은 J 군의 메시지를 찾아야한다.
+<br>
+<br>J 군의 메시지로 확인되는 것을 찾은 후, 해당 메시지를 DISC{메시지} 형식으로 플래그에 등록하라.
+<br>
+<br>HINT : 메모장으로 열어도 나올 것 같은데..?
+<br>
+<br><a href="http://dsmctf.kr/probs/8f672e8c583d4229aee52829dc1611ad/Forensic100_Gold_Dog.png">Download!</a></p>
+                    
+                    <span class="smlFont">earliest solve</span>
+                    
+                    <p class="earliestSolve">1. qqq1ppp</p>
+                    
+                    <p class="earliestSolve">2. papico</p>
+                    
+                    <p class="earliestSolve">3. RISM</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="probsOverlayN0t_Ch@ng3d" class="overlay probsOverlay">
+            <div class="modal">
+                <button class="modalCloseBtn pointer" onclick="clclose(&#39;N0t_Ch@ng3d&#39;);">×</button>
+                <div class="probScore">920</div>
+                <h3 class="modalTitle">N0t_Ch@ng3d</h3>
+                <div class="modalBody">
+                    <p class="probContent">대덕소프트웨어마이스터고등학교에 재학중인 학생인 당신은 수사관 K 씨에게 USB 분석 의뢰를 맡기려고 한다.
+<br>
+<br>허나, 수사관 K 는 대검찰청에서 근무하다 증거 조작 혐의로 해직당한 기록이 있다.
+<br>수사관 K 씨에게 USB 분석을 맡기지 않고 다른 수사관에게 USB 분석 의뢰를 맡기면 더할 나위없이 좋겠지만,
+<br>
+<br>너무 급한 안건이고, 다른 수사관들은 이미 다른 사건을 맡은 상황이기 때문에 어쩔 수 없이 분석을 맡겨야한다.
+<br>
+<br>하지만 수사관 K 씨를 전적으로 신뢰할 수는 없기 때문에 당신은 Hash 값을 미리 추출해두고,
+<br>분석이 마친 후 Hash 값을 통해 USB가 원본 상태를 유지했다는 것을 확인하려고 한다.
+<br> 
+<br>이제, 당신은 USB의 MD5 Hash 값을 추출해야한다.
+<br>
+<br>USB의 MD5 Hash 값을 추출한 후, MD5 Hash 값을 DISC{MD5 Hash값} 형식으로 플래그에 등록하라.
+<br>
+<br>
+<br><a href="http://dsmctf.kr/probs/0f970d175f94431a9478268e6f043a97/Forensic200_N0t_Ch@ng3d.001">Download!</a></p>
+                    
+                    <span class="smlFont">earliest solve</span>
+                    
+                    <p class="earliestSolve">1. qqq1ppp</p>
+                    
+                    <p class="earliestSolve">2. papico</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="probsOverlayV3ry_E@sy" class="overlay probsOverlay">
+            <div class="modal">
+                <button class="modalCloseBtn pointer" onclick="clclose(&#39;V3ry_E@sy&#39;);">×</button>
+                <div class="probScore">1000</div>
+                <h3 class="modalTitle">V3ry_E@sy</h3>
+                <div class="modalBody">
+                    <p class="probContent">동아리 Lapio에 스파이가 잠입하였다.
+<br>
+<br>스파이 Y 군은 저녁시간에 Lapio 동아리원들이 전부 동아리실을 빠져나간 것을 확인한 뒤 동아리장 K 군의 노트북에 저장되어 있던 Lapio 회계장부를 확인할 수 있는 Admin 계정의 PassWord를 탈취하였다.
+<br>현장을 뜨기 전 Y군은 자신이 잡힐 것을 대비하여 증거를 남기지 않기 위해 Google 드라이브에 미리 PassWord를 txt 파일로 올려두었다.
+<br>
+<br>운이 좋았던 것인지, 나빴던 것인지 휴대폰을 두고 간 동아리원 S 양이 Y 군의 행위를 현장에서 발견하였고,
+<br>궁지에 몰린 Y군은 도망치려다 S 양의 엎어치기에 기절을 하였고 결국 Y 군은 검거되었다.
+<br>
+<br>Y 군이 Admin 계정의 PassWord가 담긴 txt 파일은 Google 드라이브에 있다고 자백하였으나, Google 드라이브에 접근할 수 있는 계정의 비밀번호는 미처 말하지 못하고 누군가에 의해 피살되었다.
+<br>
+<br>현장에서 발견된 증거물은 Y 군의 주머니에서 발견된 USB 하나 뿐이고, Google 드라이브에 접근할 수 있는 계정의 비밀번호가 Y 군의 USB 안에 있을 것이라고 추정되는 상황이다.
+<br>
+<br>여기서 수사관인 당신은 USB를 분석하여 Google 드라이브에 접근할 수 있는 계정의 비밀번호를 찾아내야 한다.
+<br>
+<br>계정의 비밀번호를 찾은 후, 비밀번호를 DISC{비밀번호} 형식으로 플래그에 등록하라.
+<br>
+<br>
+<br><a href="https://drive.google.com/file/d/1UsHs494c-yXWNgtylx99HH1tm9LPMSgI/view">Download!</a> 또는 <a href="http://dsmctf.kr/probs/9cd9e37f0ab34331afb6fe6f2d4cffea/Forensic300_V3ry_E@sy.zip">Download!</a>
+<br>
+<br>문제 파일 암호 : 92ef0fcf416d545484b98c2069ab031f
+<br>
+<br></p>
+                    
+                    <span class="smlFont">earliest solve</span>
+                    
+                    <p class="earliestSolve">1. qqq1ppp</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="probsOverlayWireshark" class="overlay probsOverlay">
+            <div class="modal">
+                <button class="modalCloseBtn pointer" onclick="clclose(&#39;Wireshark&#39;);">×</button>
+                <div class="probScore">600</div>
+                <h3 class="modalTitle">Wireshark</h3>
+                <div class="modalBody">
+                    <p class="probContent">와이어샤크..? 그게 뭐지??
+<br>
+<br><a href="http://dsmctf.kr/probs/571b11e929bc47b595f9939605e66632/CTF_network_Lapio.pcapng">Download!</a></p>
+                    
+                    <span class="smlFont">earliest solve</span>
+                    
+                    <p class="earliestSolve">1. papico</p>
+                    
+                    <p class="earliestSolve">2. ABCDEFGH</p>
+                    
+                    <p class="earliestSolve">3. dmlwlsdk07</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="probsOverlayMY_FLAG" class="overlay probsOverlay">
+            <div class="modal">
+                <button class="modalCloseBtn pointer" onclick="clclose(&#39;MY_FLAG&#39;);">×</button>
+                <div class="probScore">680</div>
+                <h3 class="modalTitle">MY_FLAG</h3>
+                <div class="modalBody">
+                    <p class="probContent">파일 전송 프로토콜 FTP(File Transfer Protocol)는 인터넷상의 컴퓨터들간에 파일을 교환하기 위한 표준 인터넷 규약이다. 
+<br>파일 시그니처(File Signatures)는 파일 포맷별로 존재하는 고유한 시그니처이다. 파일의 맨 앞에 존재하는 시그니처는 헤더 시그니처라 하고, 맨 끝에 존재하는 시그니처를 푸터 시그니처라 한다.
+<br>
+<br>HINT : Statistics -&gt;Protocol Hierarchy를 이용하면 패킷에 어떤 프로토콜들이 있는지 쉽게 확인할 수 있다.
+<br>
+<br><a href="http://dsmctf.kr/probs/9d9494c732074750bc958c1b78ef7f2d/CTF_Network2.pcapng">Download!</a></p>
+                    
+                    <span class="smlFont">earliest solve</span>
+                    
+                    <p class="earliestSolve">1. qqq1ppp</p>
+                    
+                    <p class="earliestSolve">2. papico</p>
+                    
+                    <p class="earliestSolve">3. redpig</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="probsOverlayDidYouGetIt" class="overlay probsOverlay">
+            <div class="modal">
+                <button class="modalCloseBtn pointer" onclick="clclose(&#39;DidYouGetIt&#39;);">×</button>
+                <div class="probScore">920</div>
+                <h3 class="modalTitle">DidYouGetIt</h3>
+                <div class="modalBody">
+                    <p class="probContent">네트워크 트래픽을 감시하고 있는 P군은 트래픽에서 수상한 패킷을 찾았다. 수상한 패킷을 만든 호스트를 찾자!
+<br>
+<br># 플래그 인증 형식
+<br>DISC{IP주소_공격유형}
+<br>
+<br>- IP 주소는 ?.?.?.? 형식으로 한다.
+<br>- 공격 유형은 영어 대문자로, 띄어쓰기는 _ 로 처리한다.
+<br>
+<br><a href="http://dsmctf.kr/probs/287d708da52b493bbe1ee671f022ae2e/Network300_DidYouGetIt.pcapng">Download!</a></p>
+                    
+                    <span class="smlFont">earliest solve</span>
+                    
+                    <p class="earliestSolve">1. qqq1ppp</p>
+                    
+                    <p class="earliestSolve">2. papico</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="probsOverlayserial" class="overlay probsOverlay">
+            <div class="modal">
+                <button class="modalCloseBtn pointer" onclick="clclose(&#39;serial&#39;);">×</button>
+                <div class="probScore">840</div>
+                <h3 class="modalTitle">serial</h3>
+                <div class="modalBody">
+                    <p class="probContent">reversing_serial 폴더를 열어보니 오직 disc.exe 파일만 있다. 실행시켜보니 name을 입력하라고 한다.
+<br>입력한 다음 이번에는 key 입력하라고 하지만 아무거나 입력해보니 틀렸다고 나온다.
+<br>아무래도 맞는 serial이 따로 있고, 그 key를 입력해야 flag가 나오는 것 같다. 이 key를 찾고 flag를 얻자!
+<br>
+<br>HINT : + 10
+<br>
+<br><a href="http://dsmctf.kr/probs/35698168044648c3b84a5eade00eb781/disc.exe">Download!</a></p>
+                    
+                    <span class="smlFont">earliest solve</span>
+                    
+                    <p class="earliestSolve">1. qqq1ppp</p>
+                    
+                    <p class="earliestSolve">2. WangBamBbang</p>
+                    
+                    <p class="earliestSolve">3. jiw01</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="probsOverlaymessagebox" class="overlay probsOverlay">
+            <div class="modal">
+                <button class="modalCloseBtn pointer" onclick="clclose(&#39;messagebox&#39;);">×</button>
+                <div class="probScore">840</div>
+                <h3 class="modalTitle">messagebox</h3>
+                <div class="modalBody">
+                    <p class="probContent">messagebox.exe를 실행해보니 "this wrong"이라는 메세지박스만 나오고 끝나버린다. 플래그를 찾기위해 올리디버그를 열고 분석해보자!
+<br>
+<br>HINT : FLAG에는 띄어쓰기가 있습니다.
+<br>HINT 2 : XOR
+<br>
+<br><a href="http://dsmctf.kr/probs/d0626c07ca374550aa2164e9f0801079/messagebox.exe">Download!</a></p>
+                    
+                    <span class="smlFont">earliest solve</span>
+                    
+                    <p class="earliestSolve">1. qqq1ppp</p>
+                    
+                    <p class="earliestSolve">2. WangBamBbang</p>
+                    
+                    <p class="earliestSolve">3. ABCDEFGH</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="probsOverlayhow_about_this" class="overlay probsOverlay">
+            <div class="modal">
+                <button class="modalCloseBtn pointer" onclick="clclose(&#39;how_about_this&#39;);">×</button>
+                <div class="probScore">1000</div>
+                <h3 class="modalTitle">how_about_this</h3>
+                <div class="modalBody">
+                    <p class="probContent">리버싱이 어렵다구요..? 네. 맞아요 사실 어려운게 정상이예요 ㅠㅠ.. 그래도 조금 어려운걸 준비해봤는데..
+<br>가상의 폴더의 구조를 불러오는 프로그램에서 플래그가 들어있는 파일의 내용을 읽어보아요!
+<br>(출제자의 발적화때문에 자주 터집니다. 응답없음이 뜬다면 시간차를 두고 재실행 해보세요..!)
+<br>
+<br>HINT : 
+<br>typedef struct{
+<br>	char key;
+<br>	char permission;
+<br>	char *name;
+<br>	char *body;
+<br>} VirtualFile;
+<br>
+<br><a href="http://dsmctf.kr/probs/7b7fb5423a434906a8c4d9193343107a/prob.zip">Download!</a></p>
+                    
+                    <span class="smlFont">earliest solve</span>
+                    
+                    <p class="earliestSolve">1. qqq1ppp</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="probsOverlayMixed_breed" class="overlay probsOverlay">
+            <div class="modal">
+                <button class="modalCloseBtn pointer" onclick="clclose(&#39;Mixed_breed&#39;);">×</button>
+                <div class="probScore">200</div>
+                <h3 class="modalTitle">Mixed_breed</h3>
+                <div class="modalBody">
+                    <p class="probContent">String Replace는 쉽게 말해 문자열의 형태를 바꿔주는 것이다.
+<br>str_replace("king","queen","theking"); 을 예시로 들면 theking이라는 문자열에서
+<br>king을 queen으로 바꿔주라는 말이다.
+<br>
+<br>Decoding 즉 복호화는 암호화된 정보를 암호화되기 전으로 돌리는 처리 혹은 그 방법을 말한다.
+<br>base64 암호화 방식은 그 끝이 =으로 끝나서 알아보기 쉽다.
+<br>
+<br>해시암호란 평문 즉 어떠한 문장을 해시알고리즘을 통해 해시값으로 출력하는 것을 말한다.
+<br>띄어쓰기 등의 약간의 변화에도 해시값은 완전 다른 값이 나오기 때문에, 
+<br>해시값은 주로 데이터의 위,변조여부를 확인하는데 사용된다.
+<br>
+<br>해시함수의 종류는 MD5, SHA-1, SHA 224 등이 있다.
+<br>아 참고로 Mixed breed는 혼종이라는 말이다.
+<br>
+<br>HINT : <a href="http://md5decrypt.net/en/Sha512/">복호화</a>
+<br>
+<br><a href="http://kshgroup.kr/disc/probs/80df439966e84eb893731e70b44b953a/index.php">바로가기</a></p>
+                    
+                    <span class="smlFont">earliest solve</span>
+                    
+                    <p class="earliestSolve">1. WangBamBbang</p>
+                    
+                    <p class="earliestSolve">2. ABCDEFGH</p>
+                    
+                    <p class="earliestSolve">3. papico</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="probsOverlayMagicTime" class="overlay probsOverlay">
+            <div class="modal">
+                <button class="modalCloseBtn pointer" onclick="clclose(&#39;MagicTime&#39;);">×</button>
+                <div class="probScore">200</div>
+                <h3 class="modalTitle">MagicTime</h3>
+                <div class="modalBody">
+                    <p class="probContent">매직 해쉬란 php가 ==연산을 할 때, 서로 다른 값이 같은 값으로 인식되도록 하는 특수한 동작을 말한다.
+<br>이 특수한 동작이 일어나기 위해서는 조건이 있는데, 바로 문자열을 0e로 시작해야한다는 것이다.
+<br>이를 방지하기 위해 md5와 sha1 등으로 암호화를 했는데, 
+<br>암호화를 통한 결과가 0e로 시작되는 경우가 있다고 한다. 그 경우를 찾아 보자!!!
+<br>
+<br><a href="http://kshgroup.kr/disc/probs/e09581cc09414a368a8b5a257d334fa1/index.php">바로가기</a></p>
+                    
+                    <span class="smlFont">earliest solve</span>
+                    
+                    <p class="earliestSolve">1. WangBamBbang</p>
+                    
+                    <p class="earliestSolve">2. ABCDEFGH</p>
+                    
+                    <p class="earliestSolve">3. RISM</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="probsOverlaysp0ng3b0b" class="overlay probsOverlay">
+            <div class="modal">
+                <button class="modalCloseBtn pointer" onclick="clclose(&#39;sp0ng3b0b&#39;);">×</button>
+                <div class="probScore">760</div>
+                <h3 class="modalTitle">sp0ng3b0b</h3>
+                <div class="modalBody">
+                    <p class="probContent">스폰지밥이다!!!
+<br>
+<br>HINT : LFI
+<br>HINT 2 : 'base64' 라는 문자열을 필터링 하고있습니다.
+<br>
+<br><a href="http://kshgroup.kr/disc/probs/ca0c4b2ad2464bbf8838c9d7473e5109/index.php">바로가기</a></p>
+                    
+                    <span class="smlFont">earliest solve</span>
+                    
+                    <p class="earliestSolve">1. qqq1ppp</p>
+                    
+                    <p class="earliestSolve">2. papico</p>
+                    
+                    <p class="earliestSolve">3. phillyai</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="probsOverlaybooom" class="overlay probsOverlay">
+            <div class="modal">
+                <button class="modalCloseBtn pointer" onclick="clclose(&#39;booom&#39;);">×</button>
+                <div class="probScore">920</div>
+                <h3 class="modalTitle">booom</h3>
+                <div class="modalBody">
+                    <p class="probContent">Simple problem with buffer overflow vulunerable.
+<br>
+<br>HINT : .... A * 255 ...?
+<br>
+<br>nc lapio.kr 4010
+<br>
+<br><a href="http://dsmctf.kr/probs/12d90bdeb7ad42aeab032c27ec641a75/booom">Download!</a></p>
+                    
+                    <span class="smlFont">earliest solve</span>
+                    
+                    <p class="earliestSolve">1. qqq1ppp</p>
+                    
+                    <p class="earliestSolve">2. qwertyuiop</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="probsOverlaydiscboss" class="overlay probsOverlay">
+            <div class="modal">
+                <button class="modalCloseBtn pointer" onclick="clclose(&#39;discboss&#39;);">×</button>
+                <div class="probScore">1000</div>
+                <h3 class="modalTitle">discboss</h3>
+                <div class="modalBody">
+                    <p class="probContent">!!! WARNING !!!
+<br>
+<br>DISC BOSS!!
+<br>
+<br>64bit binary buffer overflow problem..
+<br>...? Attacks with common overflow payloads will not work correctly... why??
+<br>
+<br>nc lapio.kr 4012
+<br>
+<br><a href="http://dsmctf.kr/probs/a7870f5b1e5549dabfc56e360d7d2a5b/discboss">Download!</a></p>
+                    
+                    <span class="smlFont">Get the first blood..!</span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="probsOverlayhidden_menu" class="overlay probsOverlay">
+            <div class="modal">
+                <button class="modalCloseBtn pointer" onclick="clclose(&#39;hidden_menu&#39;);">×</button>
+                <div class="probScore">1000</div>
+                <h3 class="modalTitle">hidden_menu</h3>
+                <div class="modalBody">
+                    <p class="probContent">Hmm... The menu may be hidden..?
+<br>
+<br>nc lapio.kr 4011
+<br>
+<br><a href="http://dsmctf.kr/probs/158f41fe50a843ac92088c75b621ca6c/hidden_menu">Download!</a></p>
+                    
+                    <span class="smlFont">Get the first blood..!</span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div id="probsOverlayWeb MIC Check" class="overlay probsOverlay">
+            <div class="modal">
+                <button class="modalCloseBtn pointer" onclick="clclose(&#39;Web MIC Check&#39;);">×</button>
+                <div class="probScore">200</div>
+                <h3 class="modalTitle">Web MIC Check</h3>
+                <div class="modalBody">
+                    <p class="probContent">마이크 테스트
+<br>
+<br><a href="http://dsmctf.kr/probs/1fd7a5ac6538401fa5ab81ef58b96fb8/prob.html">Go!</a></p>
+                    
+                    <span class="smlFont">earliest solve</span>
+                    
+                    <p class="earliestSolve">1. riiririn</p>
+                    
+                    <p class="earliestSolve">2. RISM</p>
+                    
+                    <p class="earliestSolve">3. papico</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <button class="sidenavOpenBtn pointer">☰</button>
+    <nav class="stickyNav">
+        <span class="probsLink pointer">probs navigation</span>
+        <ul class="stickyNavList">
+            <li class="stickyNavItem"><a class="probsLink pointer">web</a></li>
+            <li class="stickyNavItem"><a class="probsLink pointer">network</a></li>
+            <li class="stickyNavItem"><a class="probsLink pointer">pwnable</a></li>
+            <li class="stickyNavItem"><a class="probsLink pointer">reversing</a></li>
+            <li class="stickyNavItem"><a class="probsLink pointer">forensic</a></li>
+            <li class="stickyNavItem"><a class="probsLink pointer">crypto</a></li>
+            <li class="stickyNavItem"><a class="probsLink pointer">programming</a></li>
+            <li class="stickyNavItem"><a class="probsLink pointer">misc</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <div class="designBox1">
+            <div class="designBox2">
+                <div class="designBox3">
+                    <h1 class="title">DSM CTF
+                        <span class="subtitle">team lapio</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section">
+        <div class="categories" id="category-web">
+            <h2 class="categoryName">web</h2>
+            
+            
+            <div class="cards probs pointer" onclick="loaad(this)" style="background: #ffff99">
+            
+                <div class="probsImg">
+                    <h3 class="probsTitle">Mixed_breed</h3>
+                    <p class="probsScore">200</p>
+                </div>
+            </div>
+            
+            
+            <div class="cards probs pointer" onclick="loaad(this)" style="background: #ffff99">
+            
+                <div class="probsImg">
+                    <h3 class="probsTitle">MagicTime</h3>
+                    <p class="probsScore">200</p>
+                </div>
+            </div>
+            
+            
+            <div class="cards probs pointer" onclick="loaad(this)" style="background: #ffff99">
+            
+                <div class="probsImg">
+                    <h3 class="probsTitle">Web MIC Check</h3>
+                    <p class="probsScore">200</p>
+                </div>
+            </div>
+            
+            
+            <div class="cards probs pointer" onclick="loaad(this)" style="background: #ffff99">
+            
+                <div class="probsImg">
+                    <h3 class="probsTitle">sp0ng3b0b</h3>
+                    <p class="probsScore">760</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="categories" id="category-network">
+            <h2 class="categoryName">network</h2>
+            
+            
+            <div class="cards probs pointer" onclick="loaad(this)" style="background: #ffff99">
+            
+                <div class="probsImg">
+                    <h3 class="probsTitle">Wireshark</h3>
+                    <p class="probsScore">600</p>
+                </div>
+            </div>
+            
+            
+            <div class="cards probs pointer" onclick="loaad(this)" style="background: #ffff99">
+            
+                <div class="probsImg">
+                    <h3 class="probsTitle">MY_FLAG</h3>
+                    <p class="probsScore">680</p>
+                </div>
+            </div>
+            
+            
+            <div class="cards probs pointer" onclick="loaad(this)">
+            
+                <div class="probsImg">
+                    <h3 class="probsTitle">DidYouGetIt</h3>
+                    <p class="probsScore">920</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="categories" id="category-pwnable">
+            <h2 class="categoryName">pwnable</h2>
+            
+            
+            <div class="cards probs pointer" onclick="loaad(this)">
+            
+                <div class="probsImg">
+                    <h3 class="probsTitle">booom</h3>
+                    <p class="probsScore">920</p>
+                </div>
+            </div>
+            
+            
+            <div class="cards probs pointer" onclick="loaad(this)">
+            
+                <div class="probsImg">
+                    <h3 class="probsTitle">discboss</h3>
+                    <p class="probsScore">1000</p>
+                </div>
+            </div>
+            
+            
+            <div class="cards probs pointer" onclick="loaad(this)">
+            
+                <div class="probsImg">
+                    <h3 class="probsTitle">hidden_menu</h3>
+                    <p class="probsScore">1000</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="categories" id="category-reversing">
+            <h2 class="categoryName">reversing</h2>
+            
+            
+            <div class="cards probs pointer" onclick="loaad(this)">
+            
+                <div class="probsImg">
+                    <h3 class="probsTitle">serial</h3>
+                    <p class="probsScore">840</p>
+                </div>
+            </div>
+            
+            
+            <div class="cards probs pointer" onclick="loaad(this)" style="background: #ffff99">
+            
+                <div class="probsImg">
+                    <h3 class="probsTitle">messagebox</h3>
+                    <p class="probsScore">840</p>
+                </div>
+            </div>
+            
+            
+            <div class="cards probs pointer" onclick="loaad(this)">
+            
+                <div class="probsImg">
+                    <h3 class="probsTitle">how_about_this</h3>
+                    <p class="probsScore">1000</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="categories" id="category-forensic">
+            <h2 class="categoryName">forensic</h2>
+            
+            
+            <div class="cards probs pointer" onclick="loaad(this)" style="background: #ffff99">
+            
+                <div class="probsImg">
+                    <h3 class="probsTitle">Gold_Dog</h3>
+                    <p class="probsScore">360</p>
+                </div>
+            </div>
+            
+            
+            <div class="cards probs pointer" onclick="loaad(this)">
+            
+                <div class="probsImg">
+                    <h3 class="probsTitle">N0t_Ch@ng3d</h3>
+                    <p class="probsScore">920</p>
+                </div>
+            </div>
+            
+            
+            <div class="cards probs pointer" onclick="loaad(this)">
+            
+                <div class="probsImg">
+                    <h3 class="probsTitle">V3ry_E@sy</h3>
+                    <p class="probsScore">1000</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="categories" id="category-crypto">
+            <h2 class="categoryName">crypto</h2>
+            
+            
+            <div class="cards probs pointer" onclick="loaad(this)" style="background: #ffff99">
+            
+                <div class="probsImg">
+                    <h3 class="probsTitle">CeasarSalad</h3>
+                    <p class="probsScore">200</p>
+                </div>
+            </div>
+            
+            
+            <div class="cards probs pointer" onclick="loaad(this)" style="background: #ffff99">
+            
+                <div class="probsImg">
+                    <h3 class="probsTitle">암호와함께사라지다</h3>
+                    <p class="probsScore">680</p>
+                </div>
+            </div>
+            
+            
+            <div class="cards probs pointer" onclick="loaad(this)">
+            
+                <div class="probsImg">
+                    <h3 class="probsTitle">연결고리</h3>
+                    <p class="probsScore">840</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="separ">
+            <p>Dev by</p>
+            <span class="bold">Team Lapio</span><br>
+            <a href="https://www.facebook.com/LapioTeam/" target="_blank">facebook</a>
+        </div>
+        <div class="separ">
+            <span class="bold">Yeon junmo</span>
+            <p>yunedoopea610@gmail.com</p>
+            <a href="https://github.com/yunedoopea2" target="_blank">github</a>
+        </div>
+    </footer>
+
+</body></html>

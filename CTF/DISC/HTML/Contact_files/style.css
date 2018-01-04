@@ -1,0 +1,658 @@
+/* intializing providen style */
+
+/* font
+
+font-family: 'NanumSquare';
+font-family: 'Roboto', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Oswald', sans-serif;
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    color: #5574f7;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* util class */
+
+.bold {
+    font-weight: bolder;
+}
+
+.highlight {
+    background-color: rgba(80, 217, 128, 0.86);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.smlFont {
+    font-size: 0.8em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cards {
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem;
+    background-color: white;
+}
+
+.alone {
+    width: 100%;
+    margin: 1rem auto;
+    max-width: 30rem;
+    padding: 2rem;
+    text-align: left;
+}
+
+.cardsName {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.inputBox {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #313131;
+    background-color: #efefef;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 0.75rem;
+    transition: 0.1s background-color;
+    margin-bottom: 1rem;
+}
+
+.inputBox:focus {
+    border-bottom: 2px solid #5574f7;
+    background-color: #c6cbdb;
+}
+
+.submit {
+    display: block;
+    margin: 0.5rem auto;
+    background-color: #313131;
+    border: none;
+    border-radius: 2px;
+    width: 6rem;
+    height: 2rem;
+    color: white;
+    transition: 0.1s background-color;
+}
+
+.submit:hover {
+    background-color: #1f1f1f;
+}
+
+textarea {
+    resize: none;
+    font-family: inherit;
+}
+
+.viewValue {
+    width: 100%;
+    background-color: #efefef;
+    height: 2.5rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 0.75rem;
+    transition: 0.1s background-color;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+/* sidebar style */
+
+.sidenav {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    right: 0;
+    position: fixed;
+    z-index: 20;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    transition: .4s width ease-in-out;
+    
+    /* changeable */
+    width: 0;
+}
+
+.sidenav-active {
+    width: 100vw;
+}
+
+.sidenavCloseBtn {
+    color: white;
+    font-size: 3rem;
+    line-height: 3rem;
+    padding:1rem;
+    display: block;
+    width: 100%;
+    height: 5rem;
+    text-align: right;
+    background: none;
+    border: none;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.sidenavList {
+    width: 100vw;
+}
+
+.sidenavLink {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    display: block;
+    width: 13rem;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.sidenavLinkHover {
+    transition: 0.2s background-color;
+}
+
+.sidenavLinkHover:hover {
+    font-weight: bolder;
+    background-color: rgba(78, 78, 78, 0.37);
+}
+
+.sidenavTitle {
+    font-size: 4rem;
+    line-height: 5rem;
+    border-bottom: 2px solid white;
+    width: 20rem;
+    margin: 0 auto 3rem auto;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+/* sticky navigation */
+
+.stickyNav {
+    height: 2.5rem;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 0 10px black;
+}
+
+.stickyNavList {
+    overflow-y: hidden;
+    transition: 0.3s height ease-in-out;
+    text-transform: uppercase;
+    
+    /* chageable */
+    height: 0;
+}
+
+.stickyNavList-active {
+    height: 100vh;
+}
+
+.sidenavOpenBtn {
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 11;
+    background-color: #4e4e4e;
+    color: white;
+    transition: 0.2s background-color;
+}
+
+.sidenavOpenBtn:hover {
+    background-color: black;
+}
+
+.sidenavOpenBtn:active {
+    border: none;
+}
+
+.probsLink {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #313131;
+    transition: 0.2s background-color;
+    display: block;
+}
+
+.probsLink:hover {
+    background-color: black;
+}
+
+/* header style */
+
+.header {
+    padding-top: 2.5rem;
+    background: linear-gradient(to bottom, white,rgba(0, 0, 0, 0.1));
+    height: 26rem;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.79);
+}
+
+.designBox1 {
+    background: linear-gradient(to bottom, rgba(13, 114, 56, 0.62), rgba(134, 201, 126, 0.8));
+    width: 15rem;
+    height: 15rem;
+    transform: rotate(10deg);
+    margin: 4rem auto;
+}
+
+.designBox2 {
+    background: linear-gradient(to top, rgba(109, 216, 69, 0.5), rgba(18, 100, 43, 0.63));
+    padding: 1rem;
+    width: 15rem;
+    height: 15rem;
+    transform: rotate(20deg);
+}
+
+.designBox3 {
+    width: 13rem;
+    height: 13rem;
+    background: white;
+    box-shadow: inset 30px 30px 70px -10px rgba(0, 0, 0, 0.49);
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.title {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    transform: rotate(-30deg);
+}
+
+.subtitle {
+    font-size: 1rem;
+    line-height: 1rem;
+    display: block;
+}
+
+/* modal */
+
+.probsModalPlace {
+    font-family: 'NanumSquare';
+}
+
+.overlay {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.32);
+    width: 100vw;
+    height: 100vh;
+    padding: 4rem 2rem 4rem 1rem;
+    transition: 0.5s top;
+    
+    /* changeable */
+    top: -100vh;
+}
+
+.modal-on {
+    top:0;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+    background-color: rgba(80, 217, 128, 0.86);
+    border-radius: 4px;
+    position: relative;
+}
+
+.modalCloseBtn {
+    color: white;
+    font-size: 3rem;
+    line-height: 2rem;
+    padding:1rem;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.probScore {
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.modalTitle {
+    width: 100%;
+    height: 3rem;
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.modalBody {
+    background-color: white;
+    width: 100%;
+    padding: 2rem;
+    height: calc(100% - 4rem);
+    font-size: 1.2rem;
+}
+
+.probContent {
+    height: calc(100% - 8.7rem);
+    overflow-y: scroll;
+}
+
+.earliestSolve {
+    line-height: 1.2rem;
+    font-weight: bolder;
+    border-top: 1px solid #b5b5b5;
+    margin-top: 0.5rem;
+    padding-top: 0.8rem;
+    height: 2rem;
+}
+
+/* section */
+
+.section {
+    border-top: 3rem solid #313131;
+    padding: 5rem 1rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.solvedProbsList {
+    margin-bottom: 1rem;
+}
+
+.solvedProbsItem {
+    padding-left: 0.75rem;
+    height: 2rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    background-color: #efefef;
+}
+
+/* rank */
+
+.tableCon {
+    width: 100%;
+    margin: 1rem auto;
+    max-width: 80rem;
+    padding: 2rem;
+    text-align: left;
+    overflow-x: scroll;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+.tableHead {
+}
+
+.tableHeadCell {
+    text-transform: uppercase;
+    padding: 0.5rem;
+}
+
+.tableBodyCell {
+    padding: 0.5rem;
+    border: 1px solid black;
+    background-color: #f0f0f0; 
+}
+
+/* probs */
+
+.categories {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.categoryName {
+    background: linear-gradient(to right, white, rgba(109, 216, 69, 0.5), white);
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: black;
+    max-width: 30rem;
+    margin: 1rem auto;
+}
+
+.probs {
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    display: inline-block;
+    transition: 0.3s all;
+    background-color: white;
+}
+
+.probs:hover {
+    transform: translate(0, -1rem);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.44);
+}
+
+.probs:active {
+    background-color: #d7daef;
+}
+
+.probsImg {
+    width: 100%;
+    height: 100%;
+    padding-top: 1rem;
+}
+
+.probsTitle {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.38);
+    color: white;
+    font-family: 'NanumSquare';
+    font-weight: 100;
+    height: 6rem;
+    padding: 0 0.5rem;
+}
+
+.probsScore {
+    font-size: 1rem;
+    line-height: 1rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, 0.69);
+    color: white;
+    height: 1rem;
+}
+
+/* probs img */
+
+#category-web .probsImg {
+    background: url(../img/web.png);
+    background-size: cover;
+}
+
+#category-network .probsImg{
+    background: url(../img/network.png);
+    background-size: cover;
+}
+
+#category-pwnable .probsImg{
+    background: url(../img/pwnable.png);
+    background-size: cover;
+}
+
+#category-reversing .probsImg{
+    background: url(../img/reversing.png);
+    background-size: cover;
+}
+
+#category-forensic .probsImg{
+    background: url(../img/forensic.png);
+    background-size: cover;
+}
+
+#category-crypto .probsImg{
+    background: url(../img/crypto.png);
+    background-size: cover;
+}
+
+#category-programming .probsImg{
+    background: url(../img/programming.png);
+    background-size: cover;
+}
+
+#category-misc .probsImg{
+    background: url(../img/misc.png);
+    background-size: cover;
+}
+
+/*              admin             */
+
+.userDeletion {
+    width: 100%;
+    height: 100%;
+    font-weight: bolder;
+}
+
+/* index - landing */
+
+.landing {
+    font-family: 'NanumSquare';
+}
+
+.article {
+    margin-bottom: 4rem;
+}
+
+.articleTitle {
+    font-size: 2rem;
+}
+
+.articleBody {
+    font-size: 1.1rem;
+}
+
+.landing .artBg0 {background:url(../img/articleBg1.png) no-repeat;}
+.landing .artBg1 {background:url(../img/articleBg2.png) no-repeat;}
+.landing .artBg2 {background:url(../img/articleBg3.png) no-repeat;}
+.landing .article {
+    padding: 50px 100px;
+    background-size: 200px;
+}
+.landing .left-article {
+    text-align: left;
+    background-position: 80%;
+}
+.landing .right-article {
+    text-align: right;
+    background-position: 20%;
+}
+.landing .final-article {
+    width: 500px;
+    margin: 50px auto;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    background-color: #313131;
+    color: #bbbbbb;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 2rem 0 3rem 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.separ {
+    text-align: left;
+    display: inline-block;
+    width: 20rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer a {
+    text-decoration: underline;
+}
+
+/* scroll bar style */
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.66);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 14px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 12px;
+	-webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.66);
+	background-color: #4d4d4d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #3c3c3c;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #212121;
+}
+
+@media screen and (max-width : 30rem) {
+    
+    section {
+        padding: 5rem 0.5rem;
+    }
+    
+    .probs {
+        width: 8rem;
+        height: 8rem;
+        padding: 0;
+        margin: 0.5rem;
+    }
+}
