@@ -114,4 +114,30 @@ if(isset($_GET["password"])){
 만약 7 초과 0 미만이라면 1로 값을 수정하고  
 passcode 가 4보다는 크고 5보다는 작을 경우 hint를 출력해준다.  
 <br>
-이것들을 우회하는 방법은 간단하다.
+그래서 이것들을 우회하기 위해서 다음과 같은 값을 입력해 주었다.  
+
+> password : lapio besbestt  
+> passcode : 4.5  
+
+결과는 다음과 같다.
+
+![Image](Image/FirstStageInput.png)  
+![Image](Image/FirstStageClear.png)
+
+성공!! Hint 값이 출력되었다.
+
+해당 값은 215ahs.. sha512 라고 직접적이지 않은 직접적인 힌트를 주고 있다.
+
+자 그러면 이것도 다시 디코딩 해주자.
+
+![Image](Image/SecondStageClear.png)
+
+결과 적으로 **7e432d6f6cc2100e03523d8985c914f3ca3f522af7799564d48c37af231c9d5b9acbc45201e139cdab4a01c7aadb4f8e4f9a2990eb3ef699f6495055cedea0d4** 가 ./hint.php?readme 를 의미함을 알 수 있었다.  
+그러면 문제의 의도대로 들어가주자.  
+
+![Image](Image/LastClear!!.png)
+
+우리를 기다리고 있는 Flag 가 있었다. **클리어!!** (혼종..)
+
+### Flag
+DISC{WH2_5O_S2RIOU5}
