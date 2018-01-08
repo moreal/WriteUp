@@ -1,6 +1,6 @@
 #-*- coding:utf8 -*-
 
-import urllib2, urllib
+import urllib2, urllib, sys
 
 WEB_PHPSESSID = 'kvkemdvcf9bqkcmk5v2c51chk4'
 WEB_USER_AGENT = 'Mozilla/4.0'
@@ -21,3 +21,19 @@ def setPHPSESSID(id):
 
 def setUSERAGENT(agent):
     WEB_USER_AGENT = agent
+
+def toUnicode(data, f="", file_write=False):
+    result = ""
+    for i in data:
+        result+=unichr(i)
+
+    if not file_write:
+        return result.encode("utf-8")
+    else:
+        f = open(f, "w")
+        f.write(result.encode("utf-8"))
+
+def toFile(path, data):
+    f = open(path, "w")
+    f.write(data)
+    f.close()
